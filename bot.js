@@ -1,7 +1,11 @@
 const {
   Pool
 } = require('pg');
-const dsbot = [process.env.DS_BOT];
+
+const result = dotenv.config();
+
+
+const dsbot = process.env.DS_BOT;
 
 
 
