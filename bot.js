@@ -7,12 +7,8 @@ const dsbot = [process.env.DS_BOT];
 
 const Discord = require("discord.js");
 
-    const client = new Discord.Client({
-      intents: [
-        Intents.FLAGS.GUILDS,
-        Intents.FLAGS.GUILD_MESSAGES
-      ],
-    })
+
+const client = new Client({ intents: [Intents.FLAGS.GUILDS] });
 
 
 
