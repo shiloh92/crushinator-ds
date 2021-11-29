@@ -5,19 +5,19 @@ const dsbot = process.env.DS_BOT;
 
 
 
-const Discord = require('discord');
+const Discord = require("discord.js");
 const client = new Discord.Client();
 
 
 
-client.on('ready', () =>{
+Client.on('ready', () =>{
 
 console.log("i ready!");
 
 });
 
 
-client.on("messageCreate", async message => {
+Client.on("messageCreate", async message => {
 
 if(message.content ==="!pint"){
 	message.channel.send("hello, I am not fully operational yet.");
@@ -29,6 +29,6 @@ message.channel.send("hello fren, beep boop.");
 
 });
 
-client.login(dsbot);
+Client.login(dsbot);
  
 
