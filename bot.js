@@ -5,7 +5,7 @@ const dsbot = process.env.DS_BOT;
 
 
 
-const Discord = require('discord.js');
+const Discord = require('discord');
 const client = new Discord.Client();
 
 
