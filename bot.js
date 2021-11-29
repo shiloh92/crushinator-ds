@@ -2,17 +2,26 @@ const {
   Pool
 } = require('pg');
 
-const dotenv = require('dotenv');
-
-
-const dsbot = process.env.DS_BOT;
-console.log(dsbot);
-
-
+const dotenv = require('dotenv'); 
 const Discord = require("discord.js");
 
 
-const client = new Client({ intents: [Intents.FLAGS.GUILDS] });
+const dsbot = process.env.DS_BOT;
+
+
+const client = new Discord.Client({
+	allowedMentions: {
+		parse: ['users', 'roles'],
+		repliedUser: true
+},
+	intents: [
+		"GUILDS",
+		"GUILD_MESSAGES",
+		"GUILD_PRESENCES",
+		"GUILD_MEMBERS",
+		"GUILD_MESSAGE_REACTIONS"
+		],
+});
 
 
 
