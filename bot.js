@@ -6,7 +6,7 @@ const result = dotenv.config();
 
 
 const dsbot = process.env.DS_BOT;
-
+console.log(dsbot);
 
 
 const Discord = require("discord.js");
@@ -17,14 +17,14 @@ const client = new Client({ intents: [Intents.FLAGS.GUILDS] });
 
 
 
-Client.on('ready', () =>{
+client.on('ready', () =>{
 
 console.log("i ready!");
 
 });
 
 
-Client.on("messageCreate", async message => {
+client.on("messageCreate", async message => {
 
 if(message.content ==="!pint"){
 	message.channel.send("hello, I am not fully operational yet.");
@@ -36,6 +36,6 @@ message.channel.send("hello fren, beep boop.");
 
 });
 
-Client.login(dsbot);
+client.login(dsbot);
  
 
