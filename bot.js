@@ -22,8 +22,8 @@ client.on("messageCreate", async message => {
 if(message.content ==="!pint"){
 	message.channel.send("hello, I am not fully operational yet.");
 }
-if(message.content ==="!salad"{
-message.channel.send("hello, I am not fully operational yet.");
+if(message.content ==="!salad"){
+message.channel.send("hello fren, beep boop.");
 }
 
 
